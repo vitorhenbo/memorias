@@ -26,6 +26,8 @@
       onload="this.media = 'all'"
     />
     <noscript><link rel="stylesheet" href="styles-B5OZ7EO3.css" /></noscript>
+
+    <!-- HEADER STYLE -->
     <style ng-app-id="ng">
       [_nghost-ng-c2142920399] {
         box-sizing: border-box;
@@ -54,11 +56,14 @@
         padding: 1.5rem;
       }
     </style>
+
+    <!-- CHAPTER STYLE -->
     <style ng-app-id="ng">
       [_nghost-ng-c3398978719] {
         display: block;
         padding: 2rem;
       }
+
       .chapter[_ngcontent-ng-c3398978719] {
         max-width: 900px;
         margin: 2rem auto;
@@ -76,34 +81,45 @@
           monospace;
         color: #111827;
       }
+
       .chapter[_ngcontent-ng-c3398978719] h1[_ngcontent-ng-c3398978719] {
         font-size: 2rem;
         margin: 0 0 1rem;
         font-weight: 700;
         text-align: left;
       }
+
       .chapter-content[_ngcontent-ng-c3398978719] p[_ngcontent-ng-c3398978719] {
         margin: 0 0 1rem;
         line-height: 1.6;
         font-size: 1rem;
       }
-      .chapter-image[_ngcontent-ng-c3398978719] {
-        display: flex;
-        justify-content: center;
-        margin-top: 1.5rem;
-      }
+
+      /* ===== CORREÇÃO DEFINITIVA DA IMAGEM ===== */
+
+      .chapter-image,
       .chapter-image[_ngcontent-ng-c3398978719] {
         width: 100%;
         margin-top: 1.5rem;
       }
 
-      .chapter-image[_ngcontent-ng-c3398978719] img[_ngcontent-ng-c3398978719] {
+      .chapter-image img,
+      .chapter-image[_ngcontent-ng-c3398978719] img,
+      .chapter-image img[_ngcontent-ng-c3398978719] {
         width: 100%;
+        max-width: 100%;
         height: auto;
         display: block;
         border-radius: 8px;
         box-shadow: 0 6px 18px #00000014;
       }
+
+      .chapter,
+      .chapter[_ngcontent-ng-c3398978719] {
+        overflow: hidden;
+      }
+
+      /* ======================================== */
 
       @media (max-width: 640px) {
         .chapter[_ngcontent-ng-c3398978719] {
